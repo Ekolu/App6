@@ -26,10 +26,8 @@ class ToDoList: Task {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        // Because photo is an optional property of Meal, use conditional cast.
         self.image = aDecoder.decodeObjectForKey("image") as? UIImage
         self.items = aDecoder.decodeObjectForKey("items") as! [ToDoItem]
-        // Must call designated initilizer.
         super.init(coder: aDecoder)
     }
 

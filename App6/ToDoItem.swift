@@ -27,5 +27,4 @@ class ToDoItem: Task {
         // Must call designated initilizer.
         super.init(coder: aDecoder)
     }
-
 }

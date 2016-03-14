@@ -25,9 +25,5 @@ class Task: NSObject, NSCoding {
     
     required init?(coder aDecoder: NSCoder) {
         self.name = aDecoder.decodeObjectForKey("name") as! String
-        // Must call designated initilizer.
     }
-
-    
-    
 }
